@@ -19,7 +19,12 @@ export PROJECT_HOME=$HOME/code
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/virtualenv
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-
-
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Customize prompt -- need to read more
+PS1='Barakat \w $ '
+
+# Aliases
+alias subl="sublime"
+alias editbash="subl ~/.bashrc"
+alias ls="ls -G"

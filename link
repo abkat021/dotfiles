@@ -17,7 +17,7 @@
 mkdir -p "$BACKUP"
 
 if [ -z "$TOPATH" ]; then
-  cd "$(dirname $0)/dotfiles/"
+  cd "$(dirname $0)/dotfiles/" || { echo "Please create a directory called 'dotfiles'"; exit 1; }
 else
   cd "$TOPATH"
 fi

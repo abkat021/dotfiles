@@ -1,6 +1,9 @@
 [push]
 	default = simple
 
+[pull]
+	  rebase = true						# pull = fetch + rebase, not fetch + merge.
+
 [user]
 	name = Andrew Barakat
 	email = abkat021@stanford.edu
@@ -14,4 +17,3 @@
 
 [color]
 	ui = auto
-

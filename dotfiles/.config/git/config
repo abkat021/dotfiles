@@ -14,6 +14,10 @@
 	ce  = config --global --edit         # Open this file with $VISUAL.
 	p = push
 	s = status
+	l   = log --graph --decorate --oneline                                # Graph log.
+	la  = log --graph --decorate --oneline --all                          # Graph log of all commits.
+	las = log --graph --decorate --oneline --all --simplify-by-decoration # Graph log of tag/branch/labelled commits.
+	ll  = log --color --graph --pretty=format:'%C(214)%h%C(reset)%C(196)%d%C(reset) %s %C(35)(%cr)%C(27) <%an>%C(reset)'
 
 [color]
 	ui = auto
